@@ -1,0 +1,15 @@
+<resources>
+
+    <string name="FinanSense">Page2</string>
+    <string-array name="budget_range">
+        <item>1000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>20000</item>
+        <item>30000</item>
+        <item>40000</item>
+        <item>50000</item>
+
+        <!-- Add more ranges as needed -->
+    </string-array>
+</resources>

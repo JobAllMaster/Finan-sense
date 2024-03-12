@@ -1,0 +1,9 @@
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Define other theme attributes if needed -->
+    </style>
+
+    <style name="BottomNavigationTextAppearance">
+        <item name="android:textSize">12sp</item> <!-- Adjust the text size as needed -->
+    </style>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#3a3636"
+    >
+
+
+    <EditText
+        android:layout_width="295dp"
+        android:layout_height="49dp"
+        android:background="#FFFFFFFF"
+        android:text="Enter amount here"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+
+    <Button
+        android:id="@+id/mybutton"
+        android:layout_width="123dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#1aa4ff"
+        android:clickable="true"
+        android:fontFamily="@font/anton"
+        android:text="INSERT"
+        android:textAlignment="center"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.552"
+        />
+
+    <TextView
+        android:layout_width="367dp"
+        android:layout_height="84dp"
+        android:clickable="true"
+        android:fontFamily="@font/anton"
+        android:letterSpacing="0.02"
+        android:paddingTop="20dp"
+        android:text="How much are we gonna budget for you?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFFFF"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.227" />
+
+    <TextView
+        android:id="@+id/popuptext"
+        android:layout_width="360dp"
+        android:layout_height="37dp"
+        android:fontFamily="@font/anton"
+        android:letterSpacing="0.02"
+        android:text="Great! Let us handle the rest for you !!"
+        android:textAlignment="center"
+        android:textColor="#20b2aa"
+        android:textSize="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

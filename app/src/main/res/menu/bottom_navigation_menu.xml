@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_bars"
+        android:icon="@drawable/ic_bars"
+        android:title="Main Menu"/>
+
+    <item
+        android:id="@+id/menu_configure_budget"
+        android:icon="@drawable/gear"
+        android:title="Budget" />
+
+    <item
+        android:id="@+id/menu_budget_tracker"
+        android:icon="@drawable/tracker"
+        android:title="Tracker" /> <!-- Include line break using "&#10;" -->
+
+    <item
+        android:id="@+id/menu_aF"
+        android:icon="@drawable/history"
+        android:title="Finance" />
+
+    <item
+        android:id="@+id/menu_savings"
+        android:icon="@drawable/vault"
+        android:title="Savings" />
+</menu>

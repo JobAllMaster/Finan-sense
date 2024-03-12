@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/anton"
+        android:text="My Savings"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Withdraw TextView -->
+    <TextView
+        android:id="@+id/text_savings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/olive_green"
+        android:fontFamily="@font/anton"
+        android:padding="15dp"
+        android:text="0.0 $"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <!-- Withdraw EditText -->
+    <EditText
+        android:id="@+id/edit_withdraw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/custom_border_text"
+        android:fontFamily="@font/anton"
+        android:paddingLeft="15dp"
+        android:text="input amount here.."
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    <!-- Savings TextView -->
+    <TextView
+        android:id="@+id/text_withdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/anton"
+        android:text="Withdraw"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Note TextView -->
+    <TextView
+        android:id="@+id/text_note"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/anton"
+        android:text="Note: The amount remaining in your monthly budget will automatically reflect to your savings"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <!-- Enter Button -->
+    <Button
+        android:id="@+id/button_enter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/olive_green"
+        android:fontFamily="@font/anton"
+        android:text="Enter"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+    
+
+
+</LinearLayout>

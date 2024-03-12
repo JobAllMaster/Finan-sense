@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/logo"
+        android:label="Finan-Sense"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        tools:targetApi="31">
+
+
+        <activity android:name=".loadingActivity" />
+
+        <activity android:name=".MainActivity" android:exported="true" android:windowSoftInputMode="adjustPan"/>
+
+        <activity android:name=".RegistrationActivity" />
+
+        <activity android:name=".BudgetTracker"></activity>
+
+        <activity android:name=".ConfigureBudget"></activity>
+
+
+        <activity android:name=".AccountFinances"></activity>
+        <activity android:name=".InputIncome"></activity>
+        <activity android:name=".InputExpenses"></activity>
+
+
+        <activity
+            android:name=".LoadingScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

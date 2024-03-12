@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/configureBudgetFragment">
+
+    <fragment
+        android:id="@+id/configureBudgetFragment"
+        android:name="com.example.myapplication.ConfigureBudget"
+        android:label="ConfigureBudget"
+        tools:layout="@layout/fragment_configure_budget">
+        <action
+            android:id="@+id/action_configureBudgetFragment_to_budgetTrackerFragment"
+            app:destination="@id/budgetTrackerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/budgetTrackerFragment"
+        android:name="com.example.myapplication.BudgetTracker"
+        android:label="BudgetTracker"
+        tools:layout="@layout/fragment_budget_tracker" />
+</navigation>
