@@ -43,7 +43,7 @@ public class InputExpenses extends Fragment {
                 navigateToFragment(new AccountFinances());
             } else {
                 // Switch is unchecked, navigate to ConfigureBudget fragment
-                navigateToFragment(new InputExpenses());
+                navigateToFragment(new ConfigureBudget());
             }
         });
 
@@ -73,26 +73,15 @@ public class InputExpenses extends Fragment {
         String input = editText.getText().toString().trim();
         if (!input.isEmpty()) {
             try {
-                int expense = Integer.parseInt(input);
-                Integer currentProgress = sharedViewModel.getCurrentProgressValue().getValue();
-                if (currentProgress != null) {
-                    int newProgress = currentProgress - expense;
-                    if (newProgress >= 0) {
-                        sharedViewModel.setCurrentProgressValue(newProgress);
-                        editText.setText(""); // Clear the EditText after deducting the expense
-                    } else {
-                        Toast.makeText(getContext(), "Expense exceeds current progress", Toast.LENGTH_SHORT).show();
-                    }
-                }
+                inputCurrentBudget = Integer.parseInt(input);
+                sharedViewModel.setCurrentProgressValue(inputCurrentBudget);
             } catch (NumberFormatException e) {
                 Toast.makeText(getContext(), "Please enter a valid number", Toast.LENGTH_SHORT).show();
             }
         } else {
-            Toast.makeText(getContext(), "Please enter an expense", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getContext(), "Please enter a number", Toast.LENGTH_SHORT).show();
         }
     }
-
-
 
     private void hideKeyboard() {
         InputMethodManager imm = (InputMethodManager) requireContext().getSystemService(Context.INPUT_METHOD_SERVICE);
@@ -109,4 +98,3 @@ public class InputExpenses extends Fragment {
                 .commit();
     }
 }
-
